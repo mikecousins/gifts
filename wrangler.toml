@@ -8,6 +8,8 @@ bucket = "./public"
 entry-point = "workers-site"
 
 [build]
-upload_format = "service-worker"
 command = "npm install && npm run build"
 cwd = "workers-site"
+
+[build.upload]
+format = "service-worker"
