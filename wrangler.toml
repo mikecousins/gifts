@@ -1,0 +1,13 @@
+name = "gifts"
+type = "javascript"
+account_id = "7bb716ee4887455cd0265e5b6f29e575"
+workers_dev = true
+
+[site]
+bucket = "./public"
+entry-point = "workers-site"
+
+[build]
+upload_format = "service-worker"
+command = "npm install && npm run build"
+cwd = "workers-site"
