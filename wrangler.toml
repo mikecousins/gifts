@@ -9,7 +9,8 @@ bucket = "./public"
 entry-point = "workers-site"
 
 [build]
-command = "npm install && npm run build && cd workers-site && npm install && npm run build"
+command = "npm install && npm run build"
+watch_dir = "./build/index.js"
 
 [build.upload]
 format = "service-worker"
